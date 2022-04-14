@@ -9,7 +9,7 @@ const ExpensesList = ({ filteredArr }) => {
     return (
         <ul className="expenses-list">
             {filteredArr.map((expense) => (
-                <ExpenseItem key={expense.id} expense={expense} />
+                <ExpenseItem key={expense.date} expense={expense} />
             ))}
         </ul>
     );
